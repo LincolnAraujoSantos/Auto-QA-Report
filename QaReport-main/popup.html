@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>QA Report</h2>
+
+  <label>Category*:</label>
+  <select id="category">
+    <option value="">Select</option>
+    <option>ShopApp</option>
+    <option>Static Page</option>
+    <option>PCD</option>
+    <option>PDP</option>
+    <option>GNB/Footer</option>
+    <option>PF</option>
+    <option>Buy Page</option>
+    <option>HOME</option>
+    <option>PFS</option>
+    <option>MKT</option>
+    <option>Offer</option>
+    <option>EOL redirect</option>
+    <option>EPP</option>
+    <option>Business page</option>
+    <option>SEO</option>
+  </select>
+
+  <label>Sub*:</label>
+  <select id="sub">
+    <option value="">Select</option>
+    <option>BR</option>
+    <option>CO</option>
+    <option>LATIN</option>
+    <option>LATIN_EN</option>
+    <option>MX</option>
+    <option>CL</option>
+    <option>PE</option>
+    <option>AR</option>
+    <option>PY</option>
+    <option>UY</option>
+    <option>EURO</option>
+  </select>
+
+  <label>Status*:</label>
+  <select id="status">
+    <option value="">Select</option>
+    <option>APPROVED</option>
+    <option>REJECTED</option>
+    <option>FIXED</option>
+    <option>PENDING</option>
+  </select>
+
+  <label>Publisher error:</label>
+  <input type="number" id="publisherError" placeholder="Optional">
+
+  <label>Pending customer:</label>
+  <input type="number" id="pendingCustomer" placeholder="Optional">
+
+  <label>Reason for adjustment:</label>
+  <select id="reasonForAdjustment">
+    <option value="">Optional</option>
+    <option>HDR_ISSUE</option>
+    <option>SEO_PROBLEM</option>
+    <option>GAL_ISSUE</option>
+    <option>TRN_ISSUE</option>
+    <option>FEA_ISSUE</option>
+    <option>BLK_ISSUE</option>
+    <option>AST_ISSUE</option>
+    <option>REG_ISSUE</option>
+    <option>MISS_ISSUE</option>
+    <option>WDT_ISSUE</option>
+    <option>WDT_ASSET</option>
+    <option>WDT_LINK</option>
+    <option>RTB_ISSUE</option>
+  </select>
+
+  <label>QA*:</label>
+  <input type="text" id="qa" placeholder="Enter username">
+  <button id="clear" class="red">Clear</button>
+  <button id="save" class="green">Save</button>
+
+  <label>Comments:</label>
+  <textarea id="comments" placeholder="Optional"></textarea>
+
+  <div class="buttons">
+    <button id="cancel" class="red">Cancel</button>
+    <button id="report" class="blue">Report</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

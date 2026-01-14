@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Auto QA Report",
+  "version": "1.0",
+  "description": "Envia relatórios de QA diretamente para o Google Sheets",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
